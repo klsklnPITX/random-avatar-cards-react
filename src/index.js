@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import "tachyons";
+import CardList from "./CardList"
+import { avatar } from "./avatar"
 import Card from "./Card"
 
 ReactDOM.render(
   <React.StrictMode>
+    <Card id={avatar[0].id} name={avatar[0].name} email={avatar[0].email} />
+    <Card id={avatar[1].id} name={avatar[1].name} email={avatar[1].email} />
     <Card />
   </React.StrictMode>,
   document.getElementById('root')
