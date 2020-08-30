@@ -1,12 +1,22 @@
 import React from "react"
+import Card from "./Card"
 
 
 const CardList = ({ avatar }) => {
     return (
-        <div className="bg-light-blue dib br3 pa3 ma2 grow bw2 shadow-5">
-            <img src="https://avatars.dicebear.com/api/avataaars/1.svg?mood[]=happy" alt="Avatar" width="200" height="200" />
-            <h2>Hans Peter</h2>
-            <p>hans.peter@gmail.com</p>
+        <div>
+            {
+                avatar.map((user, i) => {
+                    return (
+                        <Card
+                            key={i}
+                            id={avatar[i].id}
+                            name={avatar[i].name}
+                            email={avatar[i].email}
+                        />
+                    );
+                })
+            }
         </div>
     );
 }
