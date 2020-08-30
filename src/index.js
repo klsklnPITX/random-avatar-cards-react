@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import "tachyons";
-import CardList from "./CardList"
-import { avatar } from "./avatar"
+import App from "./App"
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <CardList avatar={avatar} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
