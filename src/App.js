@@ -4,8 +4,6 @@ import { avatar } from "./avatar"
 import SearchBox from "./SearchBox"
 
 
-
-
 class App extends Component {
     constructor() {
         super();
