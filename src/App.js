@@ -1,7 +1,8 @@
-import React, { Component } from "react"
-import CardList from "./CardList"
-import { avatar } from "./avatar"
-import SearchBox from "./SearchBox"
+import React, { Component } from "react";
+import CardList from "./CardList";
+import { avatar } from "./avatar";
+import SearchBox from "./SearchBox";
+import "./App.css";
 
 
 class App extends Component {
@@ -23,7 +24,7 @@ class App extends Component {
         })
         return (
             <div className="tc">
-                <h1>Avatars</h1>
+                <h1 className="f1">Avatars</h1>
                 <SearchBox searchChange={this.onSearchChange} />
                 <CardList avatar={filteredAvatars} />
             </div>
